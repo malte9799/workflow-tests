@@ -14,7 +14,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.5.1
         with:
           source: |
-            assets/styles/sass/main.scss
+            assets/styles/sass/main.sass
           destination: |
             assets/styles/main.css
 
