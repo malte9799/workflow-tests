@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate_emoji_list:
+  generate_css:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,9 +14,9 @@ jobs:
         uses: gha-utilities/sass-build@v0.5.1
         with:
           source: |
-            assets/styles/scss/main.scss
+            /assets/styles/scss/main.scss
           destination: |
-            assets/styles/main.css
+            /assets/styles/main.css
 
       - name: Push to main branch
         run: |
