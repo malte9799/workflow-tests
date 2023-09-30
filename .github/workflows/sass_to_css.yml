@@ -1,4 +1,4 @@
-name: Generate Emoji List
+name: Generate Css
 
 on:
   workflow_dispatch:
