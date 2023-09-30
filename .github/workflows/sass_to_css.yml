@@ -1,4 +1,4 @@
-name: Generate Css
+name: Build css
 
 on:
   workflow_dispatch:
@@ -14,9 +14,9 @@ jobs:
         uses: gha-utilities/sass-build@v0.5.1
         with:
           source: |
-            assets/styles/sass/*
+            assets/styles/sass/main.sass
           destination: |
-            assets/styles/*
+            assets/styles/main.css
 
       - name: Push to main branch
         run: |
